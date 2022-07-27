@@ -42,8 +42,8 @@ img {
     padding-left: 15px;
 }
 
-.marg-bot-10 {
-    margin-bottom: 10px;
+.marg-bot-12 {
+    margin-bottom: 12px;
 }
 
 .marg-top-25 {
@@ -104,6 +104,7 @@ aside {
     background-color: #000000;
     width: 195px;
     padding: 20px 0px 10px 0px;
+    flex-shrink: 0;
 }
 
 aside div {
@@ -159,6 +160,8 @@ main {
     overflow-y: auto;
 }
 
+/* top header section */
+
 #top-header {
     height: 80px;
     background-color: #000000;
@@ -178,6 +181,60 @@ main {
     right: 20px;
     top: 18px;
     z-index: 10;
+}
+
+/* music section */
+
+#music-section {
+    padding-top: 100px;
+    height: 1vh;
+}
+
+#music-menu {
+    column-gap: 15px;
+}
+
+#music-menu div {
+    padding-bottom: 3px;
+}
+
+#music-menu div:first-child {
+    box-shadow: 0 -2px 0 #adff2f inset;
+}
+
+.music-container {
+    padding: 40px 50px 0px 15px;
+}
+
+.music-container2 {
+    padding: 40px 50px 0px 15px;
+}
+
+.music-container h3 {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+}
+
+.music-container2 h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.music-container2 p {
+    margin-bottom: 25px;
+}
+
+.card-container {
+    column-gap: 12px;
+}
+
+.card {
+    width: calc(100%/6);
+}
+
+.card h4 {
+    margin: 10px 0px 8px;
+    font-size: 0.9rem;
 }
 
 
