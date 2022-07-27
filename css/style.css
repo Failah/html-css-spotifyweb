@@ -114,6 +114,10 @@ aside div {
     margin-bottom: 20px;
 }
 
+.green-left {
+    box-shadow: 3px 0 0 #adff2f inset;
+}
+
 #plus-button div {
     background-color: #a3a3a3;
     color: black;
