@@ -196,6 +196,7 @@ main {
 
 #music-menu {
     column-gap: 15px;
+    flex-wrap: wrap;
 }
 
 #music-menu div {
@@ -285,14 +286,14 @@ footer {
 
 #track-bar {
     margin: 0 5%;
-    width: 400px;
+    width: 35vw;
     height: 3px;
     border-radius: 30px;
     background-color: #5a5a5a;
 }
 
 #track-bar div {
-    width: 70px;
+    width: 20%;
     height: 3px;
     border-radius: 30px;
     background-color: #c1c1c1;
@@ -303,18 +304,29 @@ footer {
 }
 
 #volume-bar {
-    width: 90px;
+    width: 8vw;
     height: 3px;
     border-radius: 30px;
     background-color: #5a5a5a;
 }
 
 #volume-bar div {
-    width: 20px;
+    width: 20%;
     height: 3px;
     border-radius: 30px;
     background-color: #c1c1c1;
 }
 
 
-/* debug */
+/* media query section */
+
+@media screen and (max-width: 768px) {
+
+    #music-menu div:last-child {
+        margin-top: 35px;
+    }
+
+    .card {
+        width: calc(100% / 4 - 10px);
+    }
+}
