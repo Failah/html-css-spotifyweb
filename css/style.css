@@ -267,7 +267,7 @@ footer {
 
 .left-icon-buttons {
     column-gap: 10px;
-    margin-left: 25px;
+    margin-left: 1.5vw;
 }
 
 .left-icon-buttons i {
@@ -276,6 +276,10 @@ footer {
 
 .center-options {
     height: 100%;
+}
+
+.center-options>div:nth-child(2) {
+    margin: 0 20px;
 }
 
 .center-icon-buttons {
@@ -300,11 +304,11 @@ footer {
 }
 
 .right-options {
-    column-gap: 15px;
+    column-gap: 1vw;
 }
 
 #volume-bar {
-    width: 8vw;
+    width: 90px;
     height: 3px;
     border-radius: 30px;
     background-color: #5a5a5a;
@@ -328,5 +332,31 @@ footer {
 
     .card {
         width: calc(100% / 4 - 10px);
+    }
+}
+
+@media screen and (max-width: 565px) {
+    #music-menu div:nth-child(4) {
+        margin-top: 35px;
+    }
+
+    #music-menu div:nth-child(5) {
+        margin-top: 35px;
+    }
+
+    .card {
+        width: calc(100% / 2 - 10px);
+    }
+
+    .music-container {
+        padding: 40px 10px 0px 15px;
+    }
+
+    .music-container2 {
+        padding: 40px 10px 0px 15px;
+    }
+
+    .left-icon-buttons {
+        flex-direction: column;
     }
 }
