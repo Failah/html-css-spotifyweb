@@ -202,12 +202,18 @@ main {
 }
 
 #music-menu div {
-    padding-bottom: 3px;
     margin-bottom: 40px;
 }
 
-#music-menu div:first-child {
-    box-shadow: 0 -2px 0 #adff2f inset;
+#music-menu div:first-child::after {
+    content: "";
+    height: 2px;
+    background-color: #adff2f;
+    position: relative;
+    top: -8px;
+    display: inline-block;
+    width: 100%;
+    transform: scaleX(-35%);
 }
 
 .music-container {
